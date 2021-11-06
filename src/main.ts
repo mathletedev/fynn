@@ -16,7 +16,11 @@ export = class Bot extends Base {
 	}
 
 	private handler(message: Message) {
-		if (message.channel.id !== process.env.CALC_CHANNEL || message.author.bot)
+		if (
+			message.channel.id !== process.env.CALC_CHANNEL ||
+			message.author.bot ||
+			message.content.startsWith("!")
+		)
 			return;
 
 		const math = create(all);
