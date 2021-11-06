@@ -1,2 +1,3 @@
 # fynn
-A Discord calculator bot for my math server
+
+> A Discord calculator bot for my math server

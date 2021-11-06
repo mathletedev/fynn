@@ -1,0 +1,32 @@
+{
+	"name": "fynn",
+	"version": "1.0.0",
+	"description": "A Discord calculator bot for my math server",
+	"main": "dist/index.js",
+	"scripts": {
+		"watch": "tsc -w",
+		"dev": "nodemon ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mathletedev/fynn.git"
+	},
+	"author": "mathletedev <mathletedev@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mathletedev/fynn/issues"
+	},
+	"homepage": "https://github.com/mathletedev/fynn#readme",
+	"dependencies": {
+		"dotenv-safe": "^8.2.0",
+		"eris": "^0.15.1",
+		"eris-sharder": "^1.10.0",
+		"mathjs": "^10.0.0"
+	},
+	"devDependencies": {
+		"@types/eris-sharder": "^1.10.1",
+		"@types/node": "^16.11.6",
+		"nodemon": "^2.0.14",
+		"typescript": "^4.4.4"
+	}
+}
