@@ -5,7 +5,9 @@
 	"main": "dist/index.js",
 	"scripts": {
 		"watch": "tsc -w",
-		"dev": "nodemon ."
+		"dev": "nodemon .",
+		"postinstall": "tsc",
+		"tsc": "tsc"
 	},
 	"repository": {
 		"type": "git",
