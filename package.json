@@ -9,7 +9,7 @@
 	},
 	"dependencies": {
 		"dotenv-safe": "^8.2.0",
-		"eris": "^0.16.1",
+		"eris": "0.15.1",
 		"eris-sharder": "^1.10.0",
 		"mathjs": "^10.1.1"
 	},
