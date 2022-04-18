@@ -3,13 +3,12 @@ import { combinations, ImportObject, permutations } from "mathjs";
 export const functions: ImportObject = {
 	p: permutations,
 	c: combinations,
-	bn: (n: number, k: number, p: number) => {
-		return combinations(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k);
-	},
+	bn: (n: number, k: number, p: number) =>
+		combinations(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k),
 	bp: (n: number, k: number) => permutations(n, k) / Math.pow(n, k),
 	z: (z: number) => {
-		if (z < -6.5) return 0.0;
-		if (z > 6.5) return 1.0;
+		if (z < -6.5) return 0;
+		if (z > 6.5) return 1;
 
 		let f = 1;
 		let s = 0;

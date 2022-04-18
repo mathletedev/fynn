@@ -36,7 +36,7 @@ export = class Bot extends Base {
 			embed: {
 				description: `**Expression:**\`\`\`${
 					message.content
-				}\`\`\`\n**Result:**\`\`\`${res ? res : "❌"}\`\`\``,
+				}\`\`\`\n**Result:**\`\`\`${res === undefined ? "❌" : res}\`\`\``,
 				footer: {
 					text: message.member?.nick || message.author.username,
 					icon_url: message.author.dynamicAvatarURL()
